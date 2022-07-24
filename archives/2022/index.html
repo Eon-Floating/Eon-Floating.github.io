@@ -25,13 +25,13 @@
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1658636051485">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1658636156045">
     
-    <link rel="stylesheet" href="/css/style.css?v=1658636051485">
+    <link rel="stylesheet" href="/css/style.css?v=1658636156045">
 
     
         
-            <link rel="stylesheet" href="/custom.css?v=1658636051485">
+            <link rel="stylesheet" href="/custom.css?v=1658636156045">
         
     
 <meta name="generator" content="Hexo 6.2.0"></head>
@@ -69,13 +69,6 @@
             </div>
         </a>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="我的朋友">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                我的朋友
-            </div>
-        </a>
-        
     </div>
     <aside id="nexmoe-sidebar">
     
@@ -95,7 +88,7 @@
 </div>
 
 
-	<script async src="/js/search.js?v=1658636051486"></script>
+	<script async src="/js/search.js?v=1658636156045"></script>
 
 
 
@@ -104,6 +97,19 @@
         <div class="nexmoe-widget-wrap">
 	<div class="nexmoe-widget nexmoe-social">
 		<a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/487029976"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
 			class="mdui-ripple"
 			href="https://github.com/Eon-Floating/"
 			target="_blank"
@@ -115,19 +121,6 @@
 		>
 			<i
 				class="nexmoefont icon-github"
-			></i> </a
-		><a
-			class="mdui-ripple"
-			href="https://nexmoe.com/atom.xml"
-			target="_blank"
-			mdui-tooltip="{content: 'RSS'}"
-			style="
-				color: rgb(247, 132, 34);
-				background-color: rgba(247, 132, 34, .1);
-			"
-		>
-			<i
-				class="nexmoefont icon-rss"
 			></i> </a
 		>
 	</div>
@@ -142,48 +135,6 @@
         
     
         
-        <!-- 一言 -->
-<div class="nexmoe-widget-wrap">
-  <h3 class="nexmoe-widget-title">
-    一言
-  </h3>
-  <div class="nexmoe-widget">
-    <ul class="hitokoto-box">
-      <li id="hitokoto_text_parent" class="hitokoto-text" hitokotoCategory="">
-        <a href="#" id="hitokoto_text">
-          
-        </a>
-        <a href="#" id="hitokoto_error_text" style="display: none;">
-          
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<script>
-  let hitokotoText = document.getElementById('hitokoto_text')
-  let hitokotoErroText = document.getElementById('hitokoto_error_text')
-  let hitokotoCategory = document.getElementById('hitokoto_text_parent').getAttribute('hitokotoCategory')
-  window.onload = function () {
-    let url = 'https://v1.hitokoto.cn'
-    if (hitokotoCategory) {
-      url += '?c=' + hitokotoCategory
-    }
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        hitokotoText.innerText = "「 " + data.hitokoto + " 」 from " + data.from
-        hitokotoText.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-      })
-      .catch((reason) => {
-        console.error(11, reason)
-        hitokotoText.style.display = 'none'
-        hitokotoErroText.style.display = 'block'
-      })
-  }
-</script>
-    
         
         
   <div class="nexmoe-widget-wrap">
@@ -198,55 +149,6 @@
     
         
         
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">最新文章</h3>
-    <div class="nexmoe-widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/07/24/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-    
-        
-        <div class="nexmoe-widget-wrap">
-    <div class="nexmoe-widget nexmoe-link">
-		<ul>
-        
-            <li>
-                <a href="https://xiaoshu.app/" target="_blank" >
-                    <img src="https://xsm.nexmoe.com/images/Infinite/Snipaste_2022-05-18_20-46-50.png" alt="小舒同学"></img>
-                    <p>小舒同学</p>
-                </a>
-            </li>
-        
-            <li>
-                <a href="https://nexmoe.com/" target="_blank" >
-                    <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="折影轻梦"></img>
-                    <p>折影轻梦</p>
-                </a>
-            </li>
-        
-		</ul>
-    </div>
-</div>
-<style>
-.nexmoe-widget-wrap .nexmoe-link ul li a {
-    text-align : center;
-}
-.nexmoe-widget-wrap .nexmoe-link ul li a img {
-    max-width : 100%;
-}
-.nexmoe-widget-wrap .nexmoe-link ul li a p {
-    margin: 10px 0;
-}
-</style>
-
-    
 </aside>
     <div class="nexmoe-copyright">
         &copy; 2022 Eon
@@ -327,7 +229,7 @@
 
  
 
-<script async src="/js/app.js?v=1658636051486"></script>
+<script async src="/js/app.js?v=1658636156046"></script>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>
 
